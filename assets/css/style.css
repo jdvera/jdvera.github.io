@@ -1,0 +1,93 @@
+header {
+	border: 3px solid black;
+	text-align: center;
+	margin: 0px;
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	right: 0px;
+	z-index: 1000;
+	background-color: white;
+}
+
+h1 {
+	margin: 0px;
+	font-size: 20px;
+	
+}
+
+h2 {
+	border-bottom: 3px solid black;
+	margin: 10px 5% 10px 5%;
+	padding: 10px;
+}
+
+#name {
+	padding: 33px;
+	float: left;
+	background: #5D6D7E;
+	color: white;
+	margin-left: 10%;
+	
+}
+
+nav {
+	float: right;
+	margin-right: 10%;
+}
+
+#about {
+	float: right;
+	padding: 15px;
+}
+
+#portfolio {
+	float: right;
+	padding: 15px;
+}
+
+#contact {
+	float: right;
+	padding: 15px;
+}
+
+body {
+	margin: 0px;
+	position: relative;
+	left: 0px;
+	right: 0px;
+	background-color: #D0D3D4;
+	border: 3px solid black;
+}
+
+.body {
+	z-index: 500;
+	margin: 15% 0px 0px 0px;
+	clear: both;
+	
+	height: 1500px;
+	width: 100%;
+}
+
+.content {
+	border: 3px solid black;
+	float: left;
+	width: 50%;
+	margin-left: 10%;
+}
+
+.links {
+	border: 3px solid black;
+	float: right;
+	height: 200px;
+	width: 20%;
+	margin-right: 10%;
+}
+
+#me {
+	float: left;
+}
+
+.info {
+	margin-left: 5%;
+}
