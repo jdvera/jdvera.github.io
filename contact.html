@@ -14,57 +14,68 @@
 
 			<!--Tabs-->
 			<nav>
-				<h3 id="contact"><a href="contact.html">Contact</a></h3>
-				<h3 id="portfolio"><a href="portfolio.html">Portfolio</a></h3>
-				<h3 id="about"><a href="index.html">About</a></h3>
+				<a id="contact" href="contact.html">Contact</a>
+				<a id="portfolio"href="portfolio.html">Portfolio</a>
+				<a id="about" href="index.html">About</a>
 			</nav>
 
 		</header>
 
-		<!--Container-->
-		<div class="body">
+		<!--Main Container-->
+		<div class="maincontainer">
 			
 			<div class="content">
 				<h2>Contact</h2>
 				<div class="info">
 					<div id="contactname">
 						Name<br>
-						<input type="text" name="test">
+						<input type="text" name="test" style="width: 500px; border: 1px solid #dddddd;" placeholder="John Smith">
 						<br><br>
 					</div>
 
 					<div id="contactemail">
 						Email<br>
-						<input type="text" name="text">
+						<input type="text" name="text" style="width: 500px; border: 1px solid #dddddd;" placeholder="example@gmail.com">
 						<br><br>
 					</div>
 
 					<div id="contactmessage">
 						Message<br>
-						<textarea rows="5" style="margin: 0px; width: 500px ;height: 300px;"></textarea>
+						<textarea rows="5" style="margin: 0px; width: 500px; border: 1px solid #dddddd; height: 200px;"></textarea>
+					</div>
+
+					<div id="submit">
+						<button>
+							Submit
+						</button>
 					</div>
 				</div>
 
 			</div>
-
+			
+			<!--Connect Side panel-->
 			<div class="connect">
-				<h2>Connect with me</h2>
+				<h2>Connect with Me</h2>
 				<div id="linkscontainer">
 					<a class="links" href="https://github.com/jdvera" target="_blank">
-						<img src="https://pbs.twimg.com/profile_images/616309728688238592/pBeeJQDQ.png" alt="github" height="50px" width="50px" >
+						<img src="assets/images/github.png" alt="github" height="50px" width="50px" >
 					</a>
 					<a class="links" href="https://www.linkedin.com/in/james-vera-b971b214a/" target="_blank">
-						<img src="https://lh3.googleusercontent.com/00APBMVQh3yraN704gKCeM63KzeQ-zHUi5wK6E9TjRQ26McyqYBt-zy__4i8GXDAfeys=w300" height="50px" width="50px">
+						<img src="assets/images/linkedin.png" height="50px" width="50px">
 					</a>
 					<a class="links" href="https://stackoverflow.com/users/8834708/jdvera" target="_blank">
-						<img src="https://cdn.sstatic.net/Sites/stackoverflow/img/apple-touch-icon@2.png?v=73d79a89bded" height="50px" width="50px">
+						<img src="assets/images/stackoverflow.png" height="50px" width="50px">
 					</a>
 				</div>
 			</div>
+			<!--End of Side Pannel-->
 
 		</div>
+		<!--End of Main Container-->
 
-		<!--Connect with me-->
+		<div class="footer">
+				&copy; Copyright 2016 James Vera
+		</div>
 
 </body>
 </html>
