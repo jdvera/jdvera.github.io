@@ -2,7 +2,7 @@
 var form_id = "jquery-form";
 
 var data = {
-    "access_token": "{your access token}" // sent after you sign up
+    "access_token": "g3hncqc1ub13j0y94pxv3a6z" // sent after you sign up
 };
 
 function onSuccess() {

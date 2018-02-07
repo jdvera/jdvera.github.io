@@ -10,25 +10,22 @@
 			<form id="jquery-form">
 				<p>Hire Me. Pls. I'm desparate</p>
 				<div class="form-group row">
-					<label for="example-text-input" class="col-2 col-form-label">Subject</label>
+					<label for="example-text-input" class="col-2 col-form-label">Subject:</label>
 					<div class="col-10">
-						<input class="form-control" type="text" placeholder="I love your portfolio! When can you start?" id="example-text-input">
+						<input class="form-control" type="text" name="subject" placeholder="I love your portfolio! When can you start?" id="example-text-input">
 					</div>
 				</div>
 				<div class="form-group">
-					<label for="exampleInputEmail1">Email address (optional)</label>
-					<input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
-					<small id="emailHelp" class="form-text text-muted">I won't share your email with anyone. Unless they offer me more $$$</small>
-				</div>
-				<div class="form-group">
 					<label for="exampleTextarea">Message</label>
-					<textarea class="form-control" id="exampleTextarea" rows="3"></textarea>
+					<textarea class="form-control" name="text" id="exampleTextarea" rows="3"></textarea>
 				</div>
-				<button type="submit" class="btn btn-primary">Submit</button>
+				<button type="submit" name="send" value="Send" class="btn btn-primary">Submit</button>
+    			<small><p>Powered by <a href="https://postmail.invotes.com" target="_blank">PostMail</a></p></small>
 			</form>
 			<a href="index.html">Back to Home Page</a>
 		</page-wrap>
-		<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+		
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 		<script type="text/javascript" src="assets/js/contact.js"></script>
