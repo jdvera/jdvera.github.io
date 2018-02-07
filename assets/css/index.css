@@ -1,0 +1,26 @@
+body {
+	text-align: center;
+	font-size: 18px;
+	font-family: 'Titillium Web', sans-serif;
+	background-color: #BAFEFD;
+}
+
+main {
+	display: inline-block;
+	width: 600px;
+}
+
+.carousel-inner {
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#carouselExampleIndicators {
+	margin-left: auto;
+	margin-right: auto;
+	width: 400px;
+}
+
+#dream {
+	color: black;
+}
