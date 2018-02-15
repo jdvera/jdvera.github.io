@@ -7,7 +7,12 @@ body {
 
 page-wrap {
 	display: inline-block;
-	width: 500px;
+	width: 740px;
+	border-width: 4px;
+	border-style: solid;
+	border-color: white;
+	border-radius: 25px;
+	padding: 15px 100px;
 }
 
 #jquery_form {
