@@ -1,1 +1,0 @@
-# jdvera.github.io
