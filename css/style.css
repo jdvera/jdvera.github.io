@@ -73,6 +73,10 @@ footer.page-footer {
   background-color: #9cdcfe;
 }
 
-.footer-row {
+/* .footer-row {
   margin-bottom: 0px;
+} */
+
+footer {
+  overflow: auto;
 }
