@@ -65,10 +65,14 @@ footer.page-footer {
   -webkit-filter: blur(8px);
 }
 
-.thumbnail {
-  width: 100%;
+.custom-blue-text {
+  color: #9cdcfe;
 }
 
 .custom-blue {
-  color: #9cdcfe;
+  background-color: #9cdcfe;
+}
+
+.footer-row {
+  margin-bottom: 0px;
 }
