@@ -73,10 +73,14 @@ footer.page-footer {
   background-color: #9cdcfe;
 }
 
-/* .footer-row {
-  margin-bottom: 0px;
-} */
-
 footer {
   overflow: auto;
+}
+
+.social-tags {
+  color: white;
+}
+
+.social-tags:hover {
+  color: #e0e0e0;
 }
