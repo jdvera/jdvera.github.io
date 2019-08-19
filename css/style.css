@@ -88,11 +88,12 @@ footer {
 
 .gh-repo {
   transition: text-decoration 0.2s ease-out;
-  text-decoration: underline rgba(0, 0, 0, 0);
+  text-decoration: underline rgba(255, 255, 255, 0);
 }
 
 .gh-repo:hover {
   text-decoration: underline #039be5;
+  
 }
 
 .social-tags {
