@@ -23,26 +23,32 @@
 			<div class="brand-logo">James Vera</div>
 			<ul class="right hide-on-med-and-down">
 				<li>
-					<a href="JamesVera.pdf" target="_blank"><i class="fas fa-file-pdf"></i> Resume</a>
+					<a class="nav-link-click" data-name="nav_resume" href="JamesVera.pdf" target="_blank"><i
+							class="fas fa-file-pdf"></i> Resume</a>
 				</li>
 				<li>
-					<a href="https://github.com/jdvera/" target="_blank"><i class="fab fa-github"></i> GitHub</a>
+					<a class="nav-link-click" data-name="nav-github" href="https://github.com/jdvera/" target="_blank"><i
+							class="fab fa-github"></i> GitHub</a>
 				</li>
 				<li>
-					<a href="https://www.linkedin.com/in/james-vera/" target="_blank"><i class="fab fa-linkedin"></i>
+					<a class="nav-link-click" data-name="nav-linkedin" href="https://www.linkedin.com/in/james-vera/"
+						target="_blank"><i class="fab fa-linkedin"></i>
 						LinkedIn</a>
 				</li>
 			</ul>
 
 			<ul id="nav-mobile" class="sidenav">
 				<li>
-					<a href="JamesVera.pdf" target="_blank"><i class="fas fa-file-pdf"></i> Resume</a>
+					<a class="nav-link-click" data-name="nav_resume" href="JamesVera.pdf" target="_blank"><i
+							class="fas fa-file-pdf"></i> Resume</a>
 				</li>
 				<li>
-					<a href="https://github.com/jdvera/" target="_blank"><i class="fab fa-github"></i> GitHub</a>
+					<a class="nav-link-click" data-name="nav-github" href="https://github.com/jdvera/" target="_blank"><i
+							class="fab fa-github"></i> GitHub</a>
 				</li>
 				<li>
-					<a href="https://www.linkedin.com/in/james-vera/" target="_blank"><i class="fab fa-linkedin"></i>
+					<a class="nav-link-click" data-name="nav-linkedin" href="https://www.linkedin.com/in/james-vera/"
+						target="_blank"><i class="fab fa-linkedin"></i>
 						LinkedIn</a>
 				</li>
 			</ul>
@@ -95,13 +101,14 @@
 				<div class="col s12 m6">
 					<div class="icon-block">
 						<h2>
-							<a target="_blank" href="https://deck-sculptor.herokuapp.com/">
-								<img class="responsive-img thumbnail" src="./images/deck.jpg" data-still="./images/deck.jpg"
-									data-animate="./images/deck.gif" />
+							<a data-repo="deck" target="_blank" href="https://deck-sculptor.herokuapp.com/">
+								<img data-repo="deck" class="responsive-img thumbnail" src="./images/deck.jpg"
+									data-still="./images/deck.jpg" data-animate="./images/deck.gif" />
 							</a>
 						</h2>
 						<h5 class="center">
-							<a target="_blank" class="gh-repo" href="https://github.com/jdvera/deckSculptor">The Deck
+							<a data-repo="deck" target="_blank" class="gh-repo"
+								href="https://github.com/jdvera/deckSculptor">The Deck
 								Sculptor</a>
 						</h5>
 
@@ -114,13 +121,14 @@
 				<div class="col s12 m6">
 					<div class="icon-block">
 						<h2>
-							<a target="_blank" href="https://coffee-connect.herokuapp.com/">
-								<img class="responsive-img thumbnail" src="./images/coffee.jpg" data-still="./images/coffee.jpg"
-									data-animate="./images/coffee.gif" />
+							<a data-repo="coffee" target="_blank" href="https://coffee-connect.herokuapp.com/">
+								<img data-repo="coffee" class="responsive-img thumbnail" src="./images/coffee.jpg"
+									data-still="./images/coffee.jpg" data-animate="./images/coffee.gif" />
 							</a>
 						</h2>
 						<h5 class="center">
-							<a target="_blank" class="gh-repo" href="https://github.com/jdvera/coffeeV2">Coffee Connect</a>
+							<a data-repo="coffee" target="_blank" class="gh-repo"
+								href="https://github.com/jdvera/coffeeV2">Coffee Connect</a>
 						</h5>
 
 						<p>Mobile-first MERN app made to help groups decide on a place to meet based on members'
@@ -132,13 +140,14 @@
 				<div class="col s12 m6">
 					<div class="icon-block">
 						<h2>
-							<a target="_blank" href="https://powerful-falls-22724.herokuapp.com/">
-								<img class="responsive-img thumbnail" src="./images/spell.jpg" data-still="./images/spell.jpg"
-									data-animate="./images/spell.gif" />
+							<a data-repo="spell" target="_blank" href="https://powerful-falls-22724.herokuapp.com/">
+								<img data-repo="spell" class="responsive-img thumbnail" src="./images/spell.jpg"
+									data-still="./images/spell.jpg" data-animate="./images/spell.gif" />
 							</a>
 						</h2>
 						<h5 class="center">
-							<a target="_blank" class="gh-repo" href="https://github.com/ashkthx/DnDCharacterSpellList">Spell
+							<a data-repo="spell" target="_blank" class="gh-repo"
+								href="https://github.com/ashkthx/DnDCharacterSpellList">Spell
 								Tracker</a>
 						</h5>
 
@@ -158,7 +167,8 @@
 								data-animate="./images/viper.gif" />
 						</h2>
 						<h5 class="center">
-							<a target="_blank" class="gh-repo" href="https://github.com/jdvera/ViperScouting">ViperScouting</a>
+							<a data-repo="viper" target="_blank" class="gh-repo"
+								href="https://github.com/jdvera/ViperScouting">ViperScouting</a>
 						</h5>
 
 						<p>React Native Android app designed for a highschool First Robotics team to tabulate
@@ -206,6 +216,9 @@
 
 
 	<!--  Scripts-->
+	<script src="https://www.gstatic.com/firebasejs/6.6.1/firebase-app.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/6.6.1/firebase-database.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.js"></script>
 	<script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
 	<script src="js/materialize.js"></script>
 	<script src="js/init.js"></script>
