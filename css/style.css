@@ -65,6 +65,14 @@ footer.page-footer {
   -webkit-filter: blur(8px);
 }
 
+.message-status {
+  display: none;
+}
+
+.ing {
+  display: none;
+}
+
 .custom-blue-text {
   color: #9cdcfe;
 }

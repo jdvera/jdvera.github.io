@@ -14,6 +14,15 @@
     firebase.initializeApp(firebaseConfig);
     var database = firebase.database();
 
+    // dont want anything pushed when testing
+    // database.ref = function() {
+    //   return {
+    //     set() {
+    //       return;
+    //     }
+    //   };
+    // };
+
     database.ref("/" + moment().format("x")).set({
       page_load: moment().format('MMM D, HH:mm')
     });
@@ -36,7 +45,36 @@
       database.ref("/" + moment().format("x")).set({
         [$(this).data("name")]: moment().format('MMM D, HH:mm')
       });
-    })
+    });
+
+    $("#message-form").on("submit", function(event) {
+      event.preventDefault();
+      $(".ing").show();
+      $(".message-submit").prop("disabled", true);
+      $(".message-status").hide().text("");
+      var messageName = $("#message-name").val();
+      var messageEmail = $("#message-email").val();
+      var messageText = $("#message-text").val();
+
+      database.ref("/" + moment().format("x")).set({
+        messageDate: moment().format('MMM D, HH:mm'),
+        messageName,
+        messageEmail,
+        messageText
+      }).then(function() {
+        $("#message-name").val("");
+        $("#message-email").val("");
+        $("#message-text").val("");
+        $(".message-status").show().text("Message Sent");
+        $(".message-submit").prop("disabled", false);
+        $(".ing").hide();
+      }).catch(function(err) {
+        console.log(err.message);
+        $(".message-status").show().text("An Error Occured");
+        $(".message-submit").prop("disabled", false);
+        $(".ing").hide();
+      });
+    });
 
 
     $(".sidenav").sidenav();
